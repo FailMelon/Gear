@@ -7,8 +7,6 @@
 
 gear_module "gear_std"
 
-namespace( Gmod.Entities )
-
 class "BasePlayer"
 function BasePlayer:BasePlayer( ply )
 	self.Object = ply

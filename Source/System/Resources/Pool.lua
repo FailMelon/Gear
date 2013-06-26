@@ -9,8 +9,6 @@ gear_module "gear_std"
 
 using( System.Collections )
 
-namespace( System.Resources )
-
 -- Name: Pool
 -- Purpose: Provide a resource pool for efficient lua resource usage
 class "Pool"

@@ -9,8 +9,6 @@ gear_module "gear_std"
 
 using( System.Collections )
 
-namespace( Gmod.Net )
-
 class "Message"
 function Message:Message( msgname )
 	self.Items = new( List )

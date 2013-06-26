@@ -9,8 +9,6 @@ gear_module "gear_std"
 
 using( System.Collections )
 
-namespace( Gmod.Hooks )
-
 local hookobjects
 
 class "HookManager" ( "static" )

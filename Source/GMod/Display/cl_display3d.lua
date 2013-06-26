@@ -9,8 +9,8 @@ gear_module "gear_std"
 
 namespace( "Gmod.Display" )
 
+using( System )
 using( System.Collections )
-using( System.Math )
 
 _G.DISPLAY_MODE_3D2D = 1
 _G.DISPLAY_MODE_RT = 2

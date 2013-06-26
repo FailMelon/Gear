@@ -5,6 +5,7 @@
 	gear.lua - Loads core gear functionality
 --]]
 
+local App = "GMod"
 local my_version = 1.00
 local gear_info = MsgN or print
 local warning = ErrorNoHalt or print
@@ -280,6 +281,14 @@ System.Number = type_create( "System.Number", function() return 0 end, nil )
 System.Table = type_create( "System.Table", function( ... ) return { ... } end, nil )
 System.Userdata = type_create( "System.Userdata", nil, nil )
 
+if (App == "GMod") then
+
+elseif (App == "ComputerCraft") then
+
+else
+
+end
+
 -- Override core functions
 if (not tostring_gear) then
 	tostring_gear = tostring
@@ -537,9 +546,15 @@ function inherit( typ )
 end
 
 -- Load debugging
-function gear_dump()
+function gear_dump(FindStr)
 	MsgN( "-- TYPES --" )
 	for key, val in pairs( types ) do
-		MsgN( key )
+		if (FindStr == nil) then
+			MsgN( key )
+		else
+			if (string.find(key, FindStr) > 0) then
+				MsgN( key )
+			end
+		end
 	end
 end

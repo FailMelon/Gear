@@ -7,8 +7,6 @@
 
 gear_module "gear_std"
 
-namespace( System.Math )
-
 local math_cos = _G.math.cos
 local math_sin = _G.math.sin
 local math_tan = _G.math.tan

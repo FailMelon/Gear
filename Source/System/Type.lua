@@ -7,8 +7,6 @@
 
 gear_module "gear_std"
 
-namespace( System.Type )
-
 local function string_split( str, sep )
 	local sep, fields = sep or ":", {}
 	local pattern = _G.string.format("([^%s]+)", sep)

@@ -9,8 +9,6 @@ gear_module "gear_std"
 
 using( System.Collections )
 
-namespace( System.Util )
-
 class "ModuleProvider"
 function ModuleProvider:ModuleProvider()
 	local modules = new( List )
